@@ -1,0 +1,126 @@
+<resources>
+    <string name="app_name">Bank_Eldam</string>
+    <string name="title_activity_splash_actvitiy">SplashActvitiy</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="skip">Skip</string>
+    <string name="rights">All rights reserved. Tech Creativity  for Software © 2018</string>
+    <string name="signup">Create new user</string>
+    <string name="remember_me">Remember me</string>
+    <string name="login">Login</string>
+    <string name="forrget_password">Forrget password</string>
+    <string name="send">Send</string>
+    <string name="phone_number">phone number</string>
+    <string name="password">password</string>
+    <string name="confirm_new_password">Confirm new Password</string>
+    <string name="new_password">new Password</string>
+    <string name="confirmation_code">Confirmation Code</string>
+    <string name="open_drawer_content">open</string>
+    <string name="close_drawer_content">close</string>
+
+
+    <string-array name="governorate_spinner_list">
+        <item>Governorate</item>
+    </string-array>
+
+    <string-array name="city_spinner_list">
+        <item>City</item>
+    </string-array>
+    <string-array name="bloodnumber_spinner_list">
+        <item>Blood Numbers</item>
+    </string-array>
+
+    <string-array name="searchview_spinner_list">
+        <item>@string/protection</item>
+    </string-array>
+    <string name="protection">protection</string>
+    <string name="title_activity_naviiii">naviiii</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="change_password_btn">Change Password</string>
+    <string name="registeration_btn">Registeration</string>
+    <string name="forget_password_tv">Forget Password</string>
+    <string name="changing_password_code_tv">Changing Password Code</string>
+    <string name="confirma_password">Confirm password</string>
+    <string name="date_of_birth">Date of birth</string>
+    <string name="blood_type">blood type</string>
+    <string name="last_donation">Last Donation</string>
+    <string name="call_us">Call us</string>
+    <string name="title_activity_navigation_drawer">Navigation_drawer</string>
+    <string name="name">name</string>
+    <string name="name_name_com">Name@name.com</string>
+    <string name="title_activity_navigation_view">NavigationViewActivity</string>
+    <string name="contact_us">Contact us</string>
+    <string name="e_mail">E-mail</string>
+    <string name="message_title">Message Title</string>
+    <string name="message_body">Message Body</string>
+    <string name="city">city</string>
+    <string name="update">update</string>
+    <string name="kafr_elshekh">Kafr-Elshekh</string>
+    <string name="cairo">Cairo</string>
+    <string name="el_sharqya">EL-Sharqya</string>
+    <string name="el_gharbia">El-Gharbia</string>
+    <string name="el_dakhlia">El-Dakhlia</string>
+    <string name="el_menya">El-Menya</string>
+    <string name="governorate">Governorate</string>
+    <string name="age">age</string>
+    <string name="number_of_blood_bags">Number of Blood Bags</string>
+    <string name="hospital_name">Hospital Name</string>
+    <string name="notes">Notes</string>
+    <string name="save">Save</string>
+    <string name="enter_email">please enter your email</string>
+    <string name="enter_password">please enter your password</string>
+    <string name="phone_restriction">The phone must be 11 digits</string>
+    <string name="enter_birthday">please enter your Date of Birth</string>
+    <string name="enter_donations">please enter the date of Last Donations</string>
+    <string name="details">Details</string>
+    <string name="call">Call</string>
+    <string name="case_name">case name:</string>
+    <string name="hospital">Hospital:</string>
+    <string name="citytxt">City:</string>
+    <string name="A_positive">A+</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="choose_locations">choose locations</string>
+    <string name="add_donation">Add Donation</string>
+    <string name="notification">Notfications</string>
+    <string name="select_location">Select Location</string>
+    <string name="A_negattive">A-</string>
+    <string name="AB_negative">AB-</string>
+    <string name="AB_positive">AB+</string>
+    <string name="O_positive">O+</string>
+    <string name="O_negative">O-</string>
+    <string name="articles">articles</string>
+    <string name="donation">Donation</string>
+    <string name="notification_settings">Notification Settings</string>
+    <string name="favourite">Favourite</string>
+    <string name="home">Home</string>
+    <string name="about_app">About App</string>
+    <string name="update_myinformation">update information</string>
+    <string name="notification_Setting">Notification Settings</string>
+    <string name="sign_out">Sign Out</string>
+    <string name="rate_app_on_store">Rate App on Store</string>
+    <string name="rules_of_use">Rules of Use</string>
+    <string name="my_information">My Information</string>
+    <string name="loading">Loading</string>
+    <string name="hospital_address">Hospital Address</string>
+    <string name="cases_number">Cases Number</string>
+    <string name="donationrequest">Donation Request:</string>
+    <string name="Please_search_here">please search here</string>
+    <string name="send_request">Send Request</string>
+    <string name="bnegative">B-</string>
+    <string name="el_monufya">El-Monufya</string>
+    <string name="dakhlia">الدقهلية</string>
+    <string name="garbia">الغربية</string>
+    <string name="kafrelshekh">كفر الشيخ</string>
+    <string name="elmonufya">المنوفية</string>
+    <string name="Bnegative">B-</string>
+    <string name="Bpositive">B+</string>
+    <string name="location">location</string>
+    <string name="choosecity">Choose City</string>
+    <string name="bloodtype">blood type</string>
+</resources>

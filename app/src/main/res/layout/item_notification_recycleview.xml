@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="@dimen/dimen_XL"
+    android:elevation="@dimen/dimen_MM"
+    android:layout_marginTop="@dimen/dimen_MMM">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_XL"
+        android:gravity="center_vertical"
+        android:background="@android:color/darker_gray">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dimen_XL"
+            android:layout_marginStart="@dimen/dimen_MMM"
+            android:layout_marginEnd="@dimen/dimen_MMM"
+            android:id="@+id/notfication_rv_icon"
+            android:src="@drawable/ic_unselected_notfication"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="notfication titles"
+            android:layout_toEndOf="@id/notfication_rv_icon"
+            android:id="@+id/notfication_rv_tv_title"
+            android:layout_marginTop="@dimen/dimen_MMM"
+            android:layout_marginStart="@dimen/dimen_S"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="20/20/2019"
+            android:layout_marginTop="@dimen/dimen_MMM"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="@dimen/dimen_MMM"
+            android:layout_marginStart="@dimen/dimen_S"
+            android:id="@+id/notfication_rv_tv_date"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="sundau"
+            android:layout_marginTop="@dimen/dimen_MMM"
+            android:layout_toStartOf="@id/notfication_rv_tv_date"
+            android:layout_marginEnd="@dimen/dimen_S"
+            android:id="@+id/notfication_rv_tv_day"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableRight="@drawable/ic_time"
+            android:layout_marginTop="@dimen/dimen_MMM"
+            android:layout_toStartOf="@id/notfication_rv_tv_day"
+            android:layout_marginEnd="@dimen/dimen_S"
+            android:id="@+id/notfication_rv_tv_dateE"/>
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>

@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.Fragment.NavigationCycle.NotificationSettings">
+
+    <include
+        android:id="@+id/notification_setting_toolbar"
+        layout="@layout/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"></include>
+
+    <TextView
+        android:id="@+id/notfication_setting_tv_header"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_below="@id/notification_setting_toolbar"
+        android:padding="@dimen/dimen_MM"
+        android:text="This Text Samples" />
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/notification_setting_cv_bloodtypes"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_below="@id/notfication_setting_tv_header"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="@dimen/dimen_MMM"
+        android:layout_marginTop="@dimen/dimen_MMM"
+        android:layout_marginEnd="@dimen/dimen_MMM"
+        android:background="@drawable/edit_text_shape">
+
+        <TextView
+            android:id="@+id/navigation_setting_tv_types_titles"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:background="@color/lightgray"
+            android:paddingLeft="@dimen/dimen_MMM"
+            android:paddingTop="@dimen/dimen_S"
+            android:text="@string/blood_type"
+            android:textStyle="bold" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginStart="@dimen/dimen_MMM"
+            android:layout_marginEnd="@dimen/dimen_MMM"
+            android:layout_marginTop="@dimen/dimen_XXL">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/notfication_setting_Opoisitive_cb"
+                android:layout_width="@dimen/dimen_HHH"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="" />
+
+            <CheckBox
+                android:id="@+id/notfication_setting_Anegative_cb"
+                android:layout_width="@dimen/dimen_HHH"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="" />
+
+            <CheckBox
+                android:id="@+id/notfication_setting_Apoisitive_cb"
+                android:layout_width="@dimen/dimen_HHH"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/notfication_setting_ABnegative_cb"
+                android:layout_width="@dimen/dimen_HHH"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="" />
+
+            <CheckBox
+                android:id="@+id/notfication_setting_ABpoisitive_cb"
+                android:layout_width="@dimen/dimen_HHH"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="" />
+
+            <CheckBox
+                android:id="@+id/notfication_setting_Onegative_cb"
+                android:layout_width="@dimen/dimen_HHH"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="" />
+
+
+        </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:id="@+id/notfication_setting_Bnegative_cb"
+                    android:layout_width="@dimen/dimen_HHH"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="" />
+
+                <CheckBox
+                    android:id="@+id/notfication_setting_Bpositive_cb"
+                    android:layout_width="@dimen/dimen_HHH"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3.2"
+
+                    android:text="" />
+            </LinearLayout>
+        </LinearLayout>
+
+
+
+
+    </android.support.v7.widget.CardView>
+
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/notification_setting_cv_govern"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_below="@id/notification_setting_cv_bloodtypes"
+        android:layout_marginStart="@dimen/dimen_MMM"
+        android:layout_marginTop="@dimen/dimen_MM"
+        android:layout_marginEnd="@dimen/dimen_MMM"
+        android:background="@drawable/edit_text_shape">
+
+        <TextView
+            android:id="@+id/notfication_setting_tv_govrn"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:background="@color/lightgray"
+            android:paddingLeft="@dimen/dimen_MMM"
+            android:paddingTop="@dimen/dimen_S"
+            android:text="@string/governorate"
+            android:textStyle="bold" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_marginStart="@dimen/dimen_MMM"
+            android:layout_marginTop="@dimen/dimen_XXL"
+            android:layout_marginEnd="@dimen/dimen_MMM">
+
+            <CheckBox
+                android:layout_width="@dimen/dimen_HHH"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:id="@+id/notification_setting_munfya_cb"
+                android:textAlignment="viewStart"
+                android:text="" />
+
+            <CheckBox
+                android:layout_width="@dimen/dimen_HHH"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textAlignment="viewStart"
+                android:id="@+id/notification_setting_dakhalia_cb"
+                android:text="" />
+
+            <CheckBox
+                android:layout_width="@dimen/dimen_HHH"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:id="@+id/notification_setting_gharbia_cb"
+                android:textAlignment="viewStart"
+                android:text="" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_marginStart="@dimen/dimen_MMM"
+            android:layout_marginTop="@dimen/dimen_H"
+            android:layout_marginEnd="@dimen/dimen_MMM">
+
+
+
+
+
+            <CheckBox
+                android:layout_width="66dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:id="@+id/notification_setting_kafr_elshekh_cb"
+                android:textAlignment="viewStart"
+                android:text="" />
+
+
+        </LinearLayout>
+
+
+    </android.support.v7.widget.CardView>
+
+    <Button
+        android:id="@+id/notification_setting_btn_save"
+        style="@style/blue_btn_style"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="@dimen/dimen_MMM"
+        android:layout_marginEnd="@dimen/dimen_MMM"
+        android:layout_marginBottom="@dimen/dimen_M"
+        android:text="@string/save" />
+
+
+</RelativeLayout>

@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".ui.Fragment.HomeCycle.RequestDetailsFragment">
+
+    <include layout="@layout/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:id="@+id/requestdetails_toolbar"
+        android:layout_alignParentTop="true"></include>
+
+    <LinearLayout
+        android:layout_below="@id/requestdetails_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/requestdetails_layout"
+        android:layout_alignParentStart="true"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="@dimen/dimen_MMM"
+            android:layout_marginTop="@dimen/dimen_MMM"
+            android:layout_marginEnd="@dimen/dimen_MMM"
+            android:background="@color/lightgray" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen_MMM"
+            android:layout_marginTop="@dimen/dimen_S"
+            android:layout_marginEnd="@dimen/dimen_MMM"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:text="@string/name" />
+
+            <TextView
+                android:id="@+id/requestdetails_tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/dimen_MMM"
+                android:text="" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="@dimen/dimen_MMM"
+            android:layout_marginTop="@dimen/dimen_MMM"
+            android:layout_marginEnd="@dimen/dimen_MMM"
+            android:background="@color/lightgray" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen_MMM"
+            android:layout_marginTop="@dimen/dimen_S"
+            android:layout_marginEnd="@dimen/dimen_MMM"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:text="@string/age " />
+
+            <TextView
+                android:id="@+id/requestdetails_tv_age"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/dimen_MMM"
+                android:text="" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="@dimen/dimen_MMM"
+            android:layout_marginTop="@dimen/dimen_MMM"
+            android:layout_marginEnd="@dimen/dimen_MMM"
+            android:background="@color/lightgray" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen_MMM"
+            android:layout_marginTop="@dimen/dimen_S"
+            android:layout_marginEnd="@dimen/dimen_MMM"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:text="@string/blood_type" />
+
+            <TextView
+                android:id="@+id/requestdetails_tv_bloodtype"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/dimen_MMM"
+                android:text="" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="@dimen/dimen_MMM"
+            android:layout_marginTop="@dimen/dimen_MMM"
+            android:layout_marginEnd="@dimen/dimen_MMM"
+            android:background="@color/lightgray" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen_MMM"
+            android:layout_marginTop="@dimen/dimen_S"
+            android:layout_marginEnd="@dimen/dimen_MMM"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:text="@string/cases_number" />
+
+            <TextView
+                android:id="@+id/requestdetails_tv_casesnumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/dimen_MMM"
+                android:text="" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="@dimen/dimen_MMM"
+            android:layout_marginTop="@dimen/dimen_MMM"
+            android:layout_marginEnd="@dimen/dimen_MMM"
+            android:background="@color/lightgray" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen_MMM"
+            android:layout_marginTop="@dimen/dimen_S"
+            android:layout_marginEnd="@dimen/dimen_MMM"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:text="@string/hospital" />
+
+            <TextView
+                android:id="@+id/requestdetails_tv_hospitalname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/dimen_MMM"
+                android:text="" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="@dimen/dimen_MMM"
+            android:layout_marginTop="@dimen/dimen_MMM"
+            android:layout_marginEnd="@dimen/dimen_MMM"
+            android:background="@color/lightgray" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen_MMM"
+            android:layout_marginTop="@dimen/dimen_S"
+            android:layout_marginEnd="@dimen/dimen_MMM"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:text="@string/hospital_address" />
+
+            <TextView
+                android:id="@+id/requestdetails_tv_hospitaladdress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/dimen_MMM"
+                android:text="" />
+        </LinearLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginStart="@dimen/dimen_MMM"
+            android:layout_marginTop="@dimen/dimen_MMM"
+            android:layout_marginEnd="@dimen/dimen_MMM"
+            android:background="@color/lightgray" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen_MMM"
+            android:layout_marginTop="@dimen/dimen_S"
+            android:layout_marginEnd="@dimen/dimen_MMM"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:text="@string/phone_number" />
+
+            <TextView
+                android:id="@+id/requestdetails_tv_phonenumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/dimen_MMM"
+                android:text="" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="@dimen/dimen_MMM"
+            android:layout_marginTop="@dimen/dimen_MMM"
+            android:layout_marginEnd="@dimen/dimen_MMM"
+            android:background="@color/lightgray" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_marginStart="@dimen/dimen_MMM"
+            android:layout_marginTop="@dimen/dimen_MMM"
+            android:layout_marginEnd="@dimen/dimen_MMM"
+            android:background="@drawable/edit_text_shape">
+
+            <TextView
+                android:id="@+id/requestdetails_tb_details_header"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:paddingStart="@dimen/dimen_MMM"
+                android:paddingEnd="@dimen/dimen_MMM"
+                android:text="@string/details" />
+
+            <TextView
+                android:id="@+id/requestdetails_tv_detailscontent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/requestdetails_tb_details_header"
+                android:layout_marginTop="@dimen/dimen_MMM"
+                android:paddingStart="@dimen/dimen_MMM"
+                android:paddingLeft="@dimen/dimen_MMM"
+                android:paddingEnd="@dimen/dimen_MMM"
+                android:text="" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginStart="@dimen/dimen_MMM"
+            android:layout_marginTop="@dimen/dimen_MMM"
+            android:layout_marginEnd="@dimen/dimen_MMM"
+            android:background="@color/lightgray" />
+
+        <fragment
+
+            android:id="@+id/map"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+            android:layout_marginStart="@dimen/dimen_MMM"
+            android:layout_marginEnd="@dimen/dimen_MMM"
+            />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginStart="@dimen/dimen_MMM"
+            android:layout_marginTop="@dimen/dimen_MMM"
+            android:layout_marginEnd="@dimen/dimen_MMM"
+            android:background="@color/lightgray" />
+
+        <Button
+            style="@style/green_btn_style"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen_MMM"
+            android:layout_marginEnd="@dimen/dimen_MMM"
+            android:drawableLeft="@color/white"
+            android:id="@+id/requestdetails_btn_call"
+            android:text="@string/call" />
+
+
+
+    </LinearLayout>
+</RelativeLayout>

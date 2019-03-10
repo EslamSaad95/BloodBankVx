@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.Fragment.NavigationCycle.AboutApp">
+    <include layout="@layout/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:id="@+id/aboutapp_toolbar"
+        android:layout_alignParentTop="true"></include>
+
+
+    <TextView
+        android:id="@+id/aboutapp_tv_body"
+        android:layout_width="match_parent"
+        android:layout_below="@id/aboutapp_toolbar"
+        android:layout_height="match_parent"
+        android:text=""
+        android:layout_marginTop="@dimen/dimen_MMM"
+        android:layout_marginStart="@dimen/dimen_MMM"
+        android:layout_marginEnd="@dimen/dimen_MMM" />
+
+
+
+</RelativeLayout>

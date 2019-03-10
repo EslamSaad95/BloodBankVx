@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".ui.Fragment.HomeCycle.AddDonationRequestFragment">
+    <include layout="@layout/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:id="@+id/mkrequest_toolbar"></include>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/mkrequest_ed_name"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/text_input_height_layout"
+        android:layout_below="@id/mkrequest_toolbar"
+        android:layout_marginStart="@dimen/dimen_MM"
+        android:layout_marginTop="@dimen/dimen_MMM"
+        android:layout_marginEnd="@dimen/dimen_MM"
+        android:background="@drawable/edit_text_shape"
+        android:paddingStart="@dimen/dimen_MMM"
+        android:paddingEnd="@dimen/dimen_MMM">
+
+        <android.support.design.widget.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:hint="@string/name"
+            android:inputType="text" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/mkrequest_ed_age"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/text_input_height_layout"
+        android:layout_below="@id/mkrequest_ed_name"
+        android:layout_marginStart="@dimen/dimen_MM"
+        android:layout_marginTop="@dimen/dimen_MM"
+        android:layout_marginEnd="@dimen/dimen_MM"
+        android:background="@drawable/edit_text_shape"
+        android:paddingStart="@dimen/dimen_MMM"
+
+        android:paddingEnd="@dimen/dimen_MMM">
+
+        <android.support.design.widget.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:hint="@string/age"
+            android:inputType="number" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/mkrequest_ed_bloodbags"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/text_input_height_layout"
+        android:layout_below="@id/mkrequest_layout_bloodtype"
+        android:layout_marginStart="@dimen/dimen_MM"
+        android:layout_marginTop="@dimen/dimen_MM"
+        android:layout_marginEnd="@dimen/dimen_MM"
+        android:background="@drawable/edit_text_shape"
+        android:paddingStart="@dimen/dimen_MMM"
+        android:paddingEnd="@dimen/dimen_MMM">
+
+        <android.support.design.widget.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:hint="@string/number_of_blood_bags"
+            android:inputType="number" />
+    </android.support.design.widget.TextInputLayout>
+
+    <RelativeLayout
+        android:id="@+id/mkrequest_layout_bloodtype"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/mkrequest_ed_age"
+        android:layout_marginStart="@dimen/dimen_MM"
+        android:layout_marginTop="@dimen/dimen_MM"
+        android:layout_marginEnd="@dimen/dimen_MM"
+        android:background="@drawable/edit_text_shape">
+
+        <TextView
+            android:id="@+id/mkrequest_tv_bloodtype_txt"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/text_input_height_layout"
+            android:hint="@string/blood_type"
+            android:paddingStart="@dimen/dimen_MMM"
+            android:paddingTop="@dimen/dimen_MMM"
+            android:paddingEnd="@dimen/dimen_MMM" />
+
+        <Spinner
+            android:id="@+id/mkrequest_sp_bloodtype"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/text_input_height_layout"></Spinner>
+
+    </RelativeLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/mkrequest_ed_hospitalname"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/text_input_height_layout"
+        android:layout_below="@id/mkrequest_ed_bloodbags"
+        android:layout_marginStart="@dimen/dimen_MM"
+        android:layout_marginTop="@dimen/dimen_MM"
+        android:layout_marginEnd="@dimen/dimen_MM"
+        android:background="@drawable/edit_text_shape"
+        android:paddingStart="@dimen/dimen_MMM"
+        android:paddingEnd="@dimen/dimen_MMM">
+
+        <android.support.design.widget.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:hint="@string/hospital_name"
+            android:inputType="text" />
+    </android.support.design.widget.TextInputLayout>
+
+    <LinearLayout
+        android:id="@+id/mkrequest_layout_hospitaladd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/mkrequest_ed_hospitalname"
+        android:layout_marginTop="@dimen/dimen_MM"
+        android:orientation="horizontal">
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/mkrequest_fr_ed_hospitaladd"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dimen_L"
+            android:layout_below="@id/mkrequest_ed_hospitalname"
+            android:layout_marginStart="@dimen/dimen_MM"
+
+            android:layout_marginEnd="@dimen/dimen_MMM"
+            android:layout_weight="1"
+            android:background="@drawable/edit_text_shape"
+            android:paddingStart="@dimen/dimen_MMM"
+            android:paddingEnd="@dimen/dimen_MMM">
+
+            <android.support.design.widget.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:hint="@string/hospital_address"
+                android:inputType="text" />
+        </android.support.design.widget.TextInputLayout>
+
+        <TextView
+            android:id="@+id/mkrequest_fr_ev_getlocation"
+            android:layout_width="@dimen/dimen_L"
+            android:layout_height="@dimen/dimen_L"
+            android:layout_below="@id/mkrequest_ed_hospitalname"
+
+            android:layout_marginEnd="@dimen/dimen_MM"
+            android:background="@drawable/edit_text_shape"
+            android:drawableEnd="@drawable/ic_location"
+            android:paddingEnd="@dimen/dimen_S"
+            android:paddingStart="@dimen/dimen_S"/>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/mkrequest_layout_govern"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/mkrequest_layout_hospitaladd"
+        android:layout_marginStart="@dimen/dimen_MM"
+        android:layout_marginTop="@dimen/dimen_MM"
+        android:layout_marginEnd="@dimen/dimen_MM"
+        android:background="@drawable/edit_text_shape">
+
+        <TextView
+            android:id="@+id/mkrequest_tv_governsp_txt"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/text_input_height_layout"
+            android:hint="@string/governorate"
+            android:paddingStart="@dimen/dimen_MMM"
+            android:paddingTop="@dimen/dimen_MMM"
+            android:paddingEnd="@dimen/dimen_MMM" />
+
+        <Spinner
+            android:id="@+id/mkrequest_sp_governorate"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/text_input_height_layout"></Spinner>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/mkrequest_layout_city"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/mkrequest_layout_govern"
+        android:layout_marginStart="@dimen/dimen_MM"
+        android:layout_marginTop="@dimen/dimen_MM"
+        android:layout_marginEnd="@dimen/dimen_MM"
+        android:background="@drawable/edit_text_shape">
+
+        <TextView
+            android:id="@+id/mkrequest_tv_citysp_txt"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/text_input_height_layout"
+            android:hint="@string/city"
+            android:paddingStart="@dimen/dimen_MMM"
+            android:paddingTop="@dimen/dimen_MMM"
+            android:paddingEnd="@dimen/dimen_MMM" />
+
+        <Spinner
+            android:id="@+id/mkrequest_sp_city"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/text_input_height_layout"></Spinner>
+    </RelativeLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/mkrequest_ed_phone"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/text_input_height_layout"
+        android:layout_below="@id/mkrequest_layout_city"
+        android:layout_marginStart="@dimen/dimen_MM"
+        android:layout_marginTop="@dimen/dimen_MM"
+        android:layout_marginEnd="@dimen/dimen_MM"
+        android:background="@drawable/edit_text_shape"
+        android:paddingStart="@dimen/dimen_MMM"
+        android:paddingEnd="@dimen/dimen_MMM">
+
+        <android.support.design.widget.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:hint="@string/phone_number"
+            android:inputType="phone" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/mkrequest_ed_notes"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_HH"
+        android:layout_below="@id/mkrequest_ed_phone"
+        android:layout_marginStart="@dimen/dimen_MM"
+        android:layout_marginTop="@dimen/dimen_MM"
+        android:layout_marginEnd="@dimen/dimen_MM"
+        android:background="@drawable/edit_text_shape"
+        android:paddingStart="@dimen/dimen_MMM"
+        android:paddingEnd="@dimen/dimen_MMM">
+
+        <android.support.design.widget.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:hint="@string/notes"
+            android:inputType="text" />
+    </android.support.design.widget.TextInputLayout>
+
+    <Button
+        android:id="@+id/mkrequest_btn_sendrequest"
+        style="@style/blue_btn_style"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/mkrequest_ed_notes"
+        android:layout_marginStart="@dimen/dimen_MM"
+        android:layout_marginTop="@dimen/dimen_MM"
+        android:layout_marginEnd="@dimen/dimen_MM"
+        android:text="@string/send_request" />
+
+
+</RelativeLayout>

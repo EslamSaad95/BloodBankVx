@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lightgray"
+    tools:context=".ui.Fragment.HomeCycle.DonationRequest">
+
+
+
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_L"
+        android:id="@+id/donation_request_bloodselecet_layout"
+        android:layout_marginEnd="@dimen/dimen_MMM"
+        android:layout_marginStart="@dimen/dimen_MM"
+        android:layout_marginTop="@dimen/dimen_MM"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:background="@drawable/rounded_shape"
+            android:layout_marginEnd="@dimen/dimen_MMM"
+            android:layout_marginStart="@dimen/dimen_MMM">
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/donation_request_tv_blood"
+            android:paddingStart="@dimen/dimen_MMM"
+            android:paddingEnd="@dimen/dimen_MMM"
+            android:textColor="#000"
+
+            android:hint="@string/blood_type"
+            android:paddingTop="@dimen/dimen_S"
+
+            >
+        </TextView>
+        <Spinner
+            android:layout_width="30dp"
+            android:layout_height="40dp"
+            android:id="@+id/blood_sp"
+            android:layout_toEndOf="@id/donation_request_tv_blood"
+            ></Spinner>
+        </RelativeLayout>
+
+
+
+
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dimen_L"
+        android:id="@+id/donation_request_cityselecet_layout"
+        android:layout_marginEnd="@dimen/dimen_MMM"
+        android:layout_marginStart="@dimen/dimen_MMM"
+        android:gravity="center_vertical"
+        android:background="@drawable/rounded_shape">
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:paddingStart="@dimen/dimen_MMM"
+            android:paddingEnd="@dimen/dimen_MMM"
+            android:paddingTop="@dimen/dimen_S"
+            android:textColor="#000"
+            android:id="@+id/donation_request_tv_city"
+            android:hint="@string/city"
+            >
+        </TextView>
+
+        <Spinner
+            android:layout_width="30dp"
+            android:layout_height="40dp"
+            android:layout_toEndOf="@id/donation_request_tv_city"
+            android:id="@+id/city_sp"
+            ></Spinner>
+
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="@dimen/dimen_M"
+        android:layout_height="@dimen/dimen_L"
+        android:src="@drawable/ic_search"
+        android:background="@drawable/white_circle"
+        android:id="@+id/donation_request_btn_search"
+        android:layout_marginEnd="@dimen/dimen_MMM"
+        />
+
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/donation_request_rv"
+        android:layout_marginStart="@dimen/dimen_MMM"
+        android:layout_marginEnd="@dimen/dimen_MMM"
+        android:layout_marginTop="@dimen/dimen_MMM"
+        android:layout_below="@id/donation_request_bloodselecet_layout"></android.support.v7.widget.RecyclerView>
+
+
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".ui.Fragment.UserCycle.LoginFragment">
+
+    <ImageView
+        android:layout_width="@dimen/dimen_logo_width"
+        android:layout_height="@dimen/dimen_logo_height"
+        android:layout_above="@id/login_fr_et_phnumber"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:layout_margin="@dimen/dimen_M"
+        android:src="@drawable/ic_logo"
+
+
+        />
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/login_fr_et_phnumber"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/text_input_height_layout"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="@dimen/dimen_MM"
+        android:layout_marginTop="@dimen/dimen_MM"
+        android:layout_marginEnd="@dimen/dimen_MM"
+        android:background="@drawable/edit_text_shape"
+        android:paddingStart="@dimen/dimen_MMM"
+        android:paddingEnd="@dimen/dimen_MMM">
+
+        <android.support.design.widget.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:hint="@string/phone_number"
+            android:inputType="phone" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/login_fr_et_pass"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/text_input_height_layout"
+        android:layout_below="@id/login_fr_et_phnumber"
+        android:layout_marginStart="@dimen/dimen_MM"
+        android:layout_marginTop="@dimen/dimen_MM"
+        android:layout_marginEnd="@dimen/dimen_MM"
+        android:background="@drawable/edit_text_shape"
+        android:paddingEnd="@dimen/dimen_MMM"
+        android:paddingStart="@dimen/dimen_MMM">
+
+        <android.support.design.widget.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:hint="@string/password"
+            android:inputType="textPassword" />
+    </android.support.design.widget.TextInputLayout>
+
+
+    <CheckBox
+        android:id="@+id/login_fr_cb_remember"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dimen_L"
+        android:layout_below="@id/login_fr_et_pass"
+        android:layout_marginStart="@dimen/dimen_MM"
+        android:layout_marginTop="@dimen/dimen_MM"
+        android:text="@string/remember_me" />
+
+    <TextView
+        android:id="@+id/login_fr_tv_forget_password"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dimen_L"
+        android:layout_below="@id/login_fr_et_pass"
+        android:layout_alignParentEnd="true"
+       android:layout_marginTop="@dimen/dimen_MM"
+        android:layout_marginEnd="@dimen/dimen_MM"
+        android:layout_marginRight="@dimen/dimen_SS"
+        android:drawableStart="@drawable/ic_alert"
+        android:drawablePadding="@dimen/dimen_SS"
+        android:gravity="center"
+        android:text="@string/forrget_password" />
+
+    <Button
+        android:id="@+id/login_fr_btn_login"
+        style="@style/green_btn_style"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/login_fr_tv_forget_password"
+        android:layout_marginLeft="@dimen/dimen_MM"
+        android:layout_marginTop="@dimen/dimen_M"
+        android:layout_marginRight="@dimen/dimen_MM"
+        android:layout_marginBottom="@dimen/dimen_MMM"
+        android:text="@string/login" />
+
+    <Button
+        android:id="@+id/logn_fr_btn_signup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/login_fr_btn_login"
+        android:layout_margin="@dimen/dimen_MM"
+        android:background="@color/colorAccent"
+        android:text="@string/signup"
+        android:textColor="@color/white" />
+
+
+</RelativeLayout>

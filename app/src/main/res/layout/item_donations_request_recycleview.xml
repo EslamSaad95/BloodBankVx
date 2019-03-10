@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:elevation="@dimen/dimen_MMM"
+    android:layout_marginEnd="@dimen/dimen_MM"
+    android:layout_marginBottom="@dimen/dimen_MM"
+    android:layout_marginStart="@dimen/dimen_MM">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/donations_request_recycle_cardview_style">
+
+
+        <TextView
+            android:layout_width="@dimen/dimen_HHH"
+            android:layout_height="@dimen/dimen_HH"
+            android:id="@+id/donation_request_tv_blood_type"
+            android:text="A+"
+            android:textSize="@dimen/dimen_M"
+            android:layout_marginEnd="@dimen/dimen_S"
+            android:layout_marginStart="@dimen/dimen_SS"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:background="@drawable/donations_request_recycleview_cv_circle_tv"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_marginTop="@dimen/dimen_MMM"
+            android:layout_height="@dimen/album_dp_30"
+            android:background="@color/lightgray"
+            android:id="@+id/donation_request_btn_details"
+            android:layout_alignParentEnd="true"
+            android:text="@string/details"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/album_dp_30"
+            android:id="@+id/donation_request_btn_call"
+            android:layout_alignParentEnd="true"
+            android:layout_marginBottom="@dimen/dimen_MMM"
+            android:paddingStart="@dimen/dimen_MM"
+            android:paddingEnd="@dimen/dimen_MMM"
+            android:layout_marginTop="@dimen/dimen_MMM"
+            android:layout_below="@id/donation_request_btn_details"
+            android:background="@color/green"
+            android:textColor="#fff"
+            android:text="@string/call"
+            android:drawableStart="@drawable/ic_white_call"
+            />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/static_tv_root"
+            android:layout_toEndOf="@id/donation_request_tv_blood_type"
+            android:layout_marginStart="@dimen/dimen_S"
+            android:layout_marginEnd="@dimen/dimen_S"
+            android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/txt_size_ss"
+            android:text="@string/case_name"
+            android:layout_marginTop="@dimen/dimen_MMM"
+            android:id="@+id/txt_case"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/hospital"
+            android:textSize="@dimen/txt_size_ss"
+            android:layout_marginTop="@dimen/dimen_MMM"
+            android:layout_below="@id/txt_case"
+            android:id="@+id/txt_hospital"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:textSize="@dimen/txt_size_ss"
+            android:layout_height="wrap_content"
+            android:text="@string/citytxt"
+            android:layout_marginTop="@dimen/dimen_MMM"
+            android:layout_below="@id/txt_hospital"
+            android:id="@+id/txt_city"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/static_tv_root"
+
+            android:layout_marginStart="@dimen/dimen_SSS"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/txt_size_ss"
+                android:text=" "
+                android:layout_marginTop="@dimen/dimen_MMM"
+                android:id="@+id/donation_request_tv_name"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" "
+                android:textSize="@dimen/txt_size_ss"
+                android:layout_marginTop="@dimen/dimen_MMM"
+                android:layout_below="@id/txt_case"
+                android:id="@+id/donation_request_tv_hospital"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/txt_size_ss"
+                android:text=""
+                android:layout_marginTop="@dimen/dimen_MMM"
+                android:layout_below="@id/txt_hospital"
+                android:id="@+id/donation_request_tv_city"/>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>

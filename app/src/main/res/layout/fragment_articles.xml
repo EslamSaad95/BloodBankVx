@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/lightgray"
+    android:layout_height="match_parent"
+    tools:context=".ui.Fragment.HomeCycle.ArticlesFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_L"
+        android:id="@+id/articles_searchview_layout"
+        android:layout_marginEnd="@dimen/dimen_MMM"
+        android:layout_marginStart="@dimen/dimen_MMM"
+        android:layout_marginTop="@dimen/dimen_MM"
+        android:background="@drawable/rounded_shape"
+        >
+
+        <Spinner
+            android:layout_width="130dp"
+            android:layout_height="@dimen/dimen_XL"
+            android:layout_alignParentStart="true"
+            android:id="@+id/articles_sp_searchview"
+            android:entries="@array/searchview_spinner_list"></Spinner>
+
+
+        <android.support.v7.widget.SearchView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:searchIcon="@drawable/ic_search"
+            android:id="@+id/articles_sv"
+            android:gravity="end"
+             android:layout_toEndOf="@id/articles_sp_searchview"
+            >
+        </android.support.v7.widget.SearchView>
+
+    </RelativeLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="@dimen/dimen_MMM"
+        android:layout_marginEnd="@dimen/dimen_MMM"
+        android:id="@+id/articles_rv"
+        android:layout_below="@id/articles_searchview_layout"
+        android:layout_marginTop="@dimen/dimen_MMM"></android.support.v7.widget.RecyclerView>
+
+
+
+
+
+</RelativeLayout>

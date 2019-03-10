@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:elevation="@dimen/dimen_MMM"
+    android:layout_marginBottom="@dimen/dimen_MM"
+    android:layout_marginStart="@dimen/dimen_MM"
+    android:layout_marginEnd="@dimen/dimen_MM">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:layout_marginStart="@dimen/dimen_MMM"
+            android:layout_marginTop="@dimen/dimen_MMM"
+            android:id="@+id/articles_rv_tv_title"/>
+        <ImageButton
+            android:layout_marginTop="@dimen/dimen_MMM"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginEnd="@dimen/dimen_MMM"
+            android:id="@+id/articles_rv_btn_favourite"
+            android:src="@drawable/ic_unselect_fav"
+            android:background="@drawable/white_circle"
+            android:layout_alignParentEnd="true"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:id="@+id/articles_rv_iv_titleimg"
+            android:layout_marginTop="@dimen/dimen_MMM"
+            android:scaleType="fitXY"
+            android:layout_marginStart="@dimen/dimen_S"
+            android:layout_marginBottom="@dimen/dimen_S"
+            android:layout_marginEnd="@dimen/dimen_S"
+            android:layout_below="@id/articles_rv_tv_title"/>
+
+
+
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>

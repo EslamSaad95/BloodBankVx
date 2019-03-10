@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+    <item android:id="@+id/nav_ic_myinfo"
+        android:title="@string/my_information"
+        android:icon="@drawable/nav_ic_myinfo"></item>
+
+    <item android:id="@+id/nav_ic_notification"
+        android:title="@string/notification_settings"
+        android:icon="@drawable/nav_ic_notfications"></item>
+
+    <item android:id="@+id/nav_ic_favourite"
+        android:title="@string/favourite"
+        android:icon="@drawable/nav_ic_favourite"></item>
+
+    <item android:id="@+id/nav_ic_home"
+        android:title="@string/home"
+        android:icon="@drawable/nav_ic_home"></item>
+
+    <item android:id="@+id/nav_ic_rules"
+        android:title="@string/rules_of_use"
+        android:icon="@drawable/nav_ic_usage_rules"></item>
+
+    <item android:id="@+id/nav_ic_contact_us"
+        android:title="@string/contact_us"
+        android:icon="@drawable/nav_ic_contact_us"></item>
+
+    <item android:id="@+id/nav_ic_aboutapp"
+        android:title="@string/about_app"
+        android:icon="@drawable/nav_ic_aboutapp"></item>
+
+    <item android:id="@+id/nav_ic_rate_app"
+        android:title="@string/rate_app_on_store"
+        android:icon="@drawable/nav_ic_rate"></item>
+
+    <item android:id="@+id/nav_ic_signout"
+        android:title="@string/sign_out"
+        android:icon="@drawable/nav_ic_signout"></item>
+
+
+</menu>

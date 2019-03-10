@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.Fragment.NavigationCycle.Favourite">
+    <include layout="@layout/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        android:layout_alignParentTop="true"
+        android:layout_centerVertical="true"
+        android:id="@+id/favourite_toolbar">
+
+    </include>
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_below="@id/favourite_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="@dimen/dimen_MMM"
+        android:layout_marginEnd="@dimen/dimen_MMM"
+        android:id="@+id/favourite_rv"
+        android:layout_marginTop="@dimen/dimen_MM"></android.support.v7.widget.RecyclerView>
+
+</RelativeLayout>
